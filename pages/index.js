@@ -48,7 +48,7 @@ export async function getStaticProps() {
         id: res._id.toString(),
         _id: null,
       })),
-      revalidate: 300000,
+      revalidate: 1,
     },
   };
 }
