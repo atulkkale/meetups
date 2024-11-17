@@ -17,6 +17,7 @@ Welcome to the Meetups project! This is a Next.js application built while learni
 ## Learning Scope
 
 This project was created to learn and practice the Pages Router in Next.js. I have also built a similar project using the App Router for further exploration of Next.js capabilities.
+[App Router Project](https://github.com/atulkkale/foodies)
 
 ## How to Run Locally
 
