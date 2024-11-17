@@ -4,9 +4,7 @@ export default async function handler(req, res) {
   try {
     if (req.method === "POST") {
       const { title, description, image, address } = req.body;
-      const client = await MongoClient.connect(
-        "mongodb+srv://atul:tester%40123@meetupcluster.ah8o1.mongodb.net/?retryWrites=true&w=majority&appName=MeetupCluster"
-      );
+      const client = await MongoClient.connect(process.env.MONGO_DB_URI);
       const db = client.db();
 
       const meetupCollection = db.collection("meetups");
